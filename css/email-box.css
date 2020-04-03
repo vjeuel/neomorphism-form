@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	background-color: #ffcbc9;
+}
+
+.container {
+	width: 100%;
+	height: 50rem;
+}
+
+.form-box {
+	background-color: #ffcbc9;
+	height: 80rem;
+	padding: 6rem 3.5rem 3.5rem 3.5rem;
+	margin: 10rem auto;
+	border-radius: 4rem;
+	box-shadow: 13px 13px 20px #d9adab, -13px -13px 20px #ffe0e0;
+}
+
+.form-box .logo {
+	background-image: url(../img/Logo-grafk.svg);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center center;
+	width: 12rem;
+	height: 12rem;
+	margin: 0 auto;
+	border-radius: 50%;
+	box-shadow: 0px 0px 2px #d9adab, 
+					0px 0px 0px 5px #ffe0e0, 
+					8px 8px 15px #d9adab, 
+					-8px -8px 15px #ffe0e0;
+}
+
+.form-box form {
+	width: 100%;
+	padding: 7.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.form-box input,
+.form-box textarea {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 1.75rem;
+	color: #d9adab;
+	padding: 2rem 1rem 2rem 0.5rem;
+}
+
+.name,
+.email,
+.message-area {
+	margin-bottom: 3rem;
+	border-radius: 2.5rem;
+	box-shadow: inset 5px 5px 5px #d9adab, 
+					inset -5px -5px 5px #ffe0e0;
+}
+
+.message-area {
+	padding-left: 2rem;
+}
+
+.fa-envelope,
+.fa-user {
+	color: #d9adab;
+	margin: 0 1rem -0.3rem 2.5rem;
+	vertical-align: -12%;
+}
+
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	height: 6rem;
+	border-radius: 3rem;
+	font-size: 2rem;
+	color: #ffe0e0;
+	text-align: center;
+	background-color: #000;
+	box-shadow: 8px 8px 15px #d9adab,
+					-8px -8px 15px #ffe0e0;
+	transition: 0.5s;
+}
+
+button:hover {
+	background-color: #d9adab;
+	color: #000;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 576px) {
+	.form-box {
+		width: calc(100% - 2rem);
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	.form-box {
+		width: calc(100% - 10rem);
+
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.form-box {
+		width: calc(100% - 25rem);
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.form-box {
+		width: calc(100% - 40rem);
+	}
+}
+
+@media (min-width: 1200px) {
+	.form-box {
+		width: calc(100% - 70rem);
+	}
+}
+
+
+/* COLORS */
+/* Color Theme Swatches in Hex */
+.harmony-1-hex {
+	color: #ffcbc9;
+}
+.harmony-2-hex {
+	color: #d9adab;
+}
+.harmony-3-hex {
+	color: #ffe0e0;
+}
